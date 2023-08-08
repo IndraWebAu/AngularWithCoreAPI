@@ -14,7 +14,7 @@ import { environment } from 'src/environments/environment';
 export class SuperHeroService {
 
   superHeroes: SuperHero[] = [];
-  private url = ` ${environment.apiUrl}/'SuperHero'`;
+  private url = ` ${environment.apiUrl}/SuperHero`;
 
   constructor(private http: HttpClient) { }
 
