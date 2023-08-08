@@ -10,7 +10,6 @@ C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\bin\Debug\net6.0
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.csproj.AssemblyReference.cache
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.AssemblyInfoInputs.cache
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.AssemblyInfo.cs
@@ -25,3 +24,4 @@ C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.pdb
 C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
+C:\Workspace\AngularWithCoreAPI\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.csproj.AssemblyReference.cache
