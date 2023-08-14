@@ -23,6 +23,11 @@ export class SuperHeroListComponent {
     this.heroToEdit = hero;
   }
 
+  updateHeroList(heroes: SuperHero[]) {
+    this.superHeroes = heroes;
+  }
+
+
   // initNewHero() {  }
 
 

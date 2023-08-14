@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SuperHero } from 'src/app/interfaces/super-hero';
 import { SuperHeroService } from 'src/app/services/super-hero-service';
 
@@ -9,6 +9,7 @@ import { SuperHeroService } from 'src/app/services/super-hero-service';
 })
 export class EditHeroComponent {
   @Input() hero!: SuperHero;
+  @Output() heroesUpdate = new EventEmitter<SuperHero[]>();
 
   constructor(private service: SuperHeroService) { }
 
@@ -17,10 +18,10 @@ export class EditHeroComponent {
       .updateSuperHero(hero)
       .subscribe();
 
-  // deleteHero = (hero: SuperHero) =>
-  //   this.service
-  //     .deleteSuperHero(hero.id)
-  //     .subscribe();
+  deleteHero = (hero: SuperHero) =>
+    this.service
+      .deleteSuperHero(hero)
+      .subscribe(heroes => this.heroesUpdate.emit(heroes));
 
   // createHero = (hero: SuperHero) =>
   //   this.service

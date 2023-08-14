@@ -30,11 +30,11 @@ export class SuperHeroService {
     this.http
       .put<SuperHero[]>(this.url, hero);
 
-  // deleteSuperHero(id: number): Observable<SuperHero[]> {
-  //   const url = `${this.url}/${id}`;
-  //   return this.http
-  //     .delete<SuperHero[]>(url);
-  //}
+  deleteSuperHero(hero: SuperHero): Observable<SuperHero[]> {
+    const url = `${this.url}/${hero.id}`;
+    return this.http
+      .delete<SuperHero[]>(url);
+  }
 }
 
 
