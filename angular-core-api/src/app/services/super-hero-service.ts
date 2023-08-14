@@ -22,9 +22,9 @@ export class SuperHeroService {
     this.http
       .get<SuperHero[]>(this.url);
 
-  // addSuperHero = (hero: SuperHero): Observable<SuperHero[]> =>
-  //   this.http
-  //     .post<SuperHero[]>(this.url, hero);
+  addSuperHero = (hero: SuperHero): Observable<SuperHero[]> =>
+    this.http
+      .post<SuperHero[]>(this.url, hero);
 
   updateSuperHero = (hero: SuperHero): Observable<SuperHero[]> =>
     this.http

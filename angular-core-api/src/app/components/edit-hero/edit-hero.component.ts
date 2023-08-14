@@ -23,10 +23,8 @@ export class EditHeroComponent {
       .deleteSuperHero(hero)
       .subscribe(heroes => this.heroesUpdate.emit(heroes));
 
-  // createHero = (hero: SuperHero) =>
-  //   this.service
-  //     .addSuperHero(hero)
-  //     .subscribe();
-
-
+  createHero = (hero: SuperHero) =>
+    this.service
+      .addSuperHero(hero)
+      .subscribe(heroes => this.heroesUpdate.emit(heroes));
 }

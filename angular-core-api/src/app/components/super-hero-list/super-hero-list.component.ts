@@ -19,16 +19,18 @@ export class SuperHeroListComponent {
       .subscribe(result => this.superHeroes = result);
   }
 
-  editHero(hero: SuperHero) {
+  editHero = (hero: SuperHero) =>
     this.heroToEdit = hero;
-  }
 
-  updateHeroList(heroes: SuperHero[]) {
+  updateHeroList = (heroes: SuperHero[]) =>
     this.superHeroes = heroes;
+
+  initNewHero = () => this.heroToEdit =
+  {
+    name: '',
+    firstName: '',
+    lastName: '',
+    place: ''
   }
-
-
-  // initNewHero() {  }
-
 
 }
