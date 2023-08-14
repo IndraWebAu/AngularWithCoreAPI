@@ -1,0 +1,35 @@
+<div *ngIf="hero">
+  <h2>{{ hero.name }}</h2>
+  <div class="edit-flex">
+    <label for="name">Name</label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="Name" />
+
+    <label for="first-name">First Name</label>
+    <input
+      id="first-name"
+      [(ngModel)]="hero.firstName"
+      placeholder="First name"
+      class="form-control"
+    />
+
+    <label for="last-name">Last Name</label>
+    <input
+      id="last-name"
+      [(ngModel)]="hero.lastName"
+      placeholder="Last name"
+      class="form-control"
+    />
+
+    <label for="place">Place</label>
+    <input
+      id="place"
+      [(ngModel)]="hero.place"
+      placeholder="Place"
+      class="form-control"
+    />
+  </div>
+
+  <button (click)="editHero(hero)" *ngIf="hero.id">Update</button>
+  <!-- <button (click)="deleteHero(hero)" *ngIf="hero.id">Delete</button> -->
+  <!-- <button (click)="createHero(hero)" *ngIf="!hero.id" >Add</button> -->
+</div>

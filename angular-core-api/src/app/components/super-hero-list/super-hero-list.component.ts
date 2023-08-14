@@ -9,6 +9,7 @@ import { SuperHeroService } from 'src/app/services/super-hero-service';
 })
 export class SuperHeroListComponent {
   superHeroes: SuperHero[] = [];
+  heroToEdit!: SuperHero;
 
   constructor(private heroService: SuperHeroService) { }
 
@@ -17,5 +18,12 @@ export class SuperHeroListComponent {
       .getSuperHeroes()
       .subscribe(result => this.superHeroes = result);
   }
+
+  editHero(hero: SuperHero) {
+    this.heroToEdit = hero;
+  }
+
+  // initNewHero() {  }
+
 
 }

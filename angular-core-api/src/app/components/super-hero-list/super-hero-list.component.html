@@ -1,3 +1,4 @@
+<!-- <button (click)="initNewHero()">Add Hero</button> -->
 <table>
   <thead>
     <th>Name</th>
@@ -7,10 +8,11 @@
   </thead>
   <tbody>
     <tr *ngFor="let hero of superHeroes">
-      <td>{{ hero.name }}</td>
+      <td>{{ hero.name }} <button (click)="editHero(hero)">Edit</button></td>
       <td>{{ hero.firstName }}</td>
       <td>{{ hero.lastName }}</td>
       <td>{{ hero.place }}</td>
     </tr>
   </tbody>
 </table>
+<app-edit-hero [hero]="heroToEdit"> </app-edit-hero>
